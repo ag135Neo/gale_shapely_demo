@@ -5,7 +5,7 @@ export const leadProjects = {
   'Proj 2': 'proj-2',
 } as const;
 
-export const leadAccounts = Object.keys(leadProjects) as Array<keyof typeof leadProjects>;
+export const leadAccounts: string[] = Object.keys(leadProjects);
 
 export const seededProjects = (Object.entries(leadProjects) as Array<[keyof typeof leadProjects, string]>).map(
   ([username, id]) => [id, username] as const,
