@@ -1,7 +1,3 @@
 {
-  "functions": {
-    "app/api/ai/route.ts": {
-      "maxDuration": 300
-    }
-  }
+  "framework": "nextjs"
 }
